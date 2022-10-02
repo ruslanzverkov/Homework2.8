@@ -18,4 +18,8 @@ public class EmployeeController {
         this.service = service;
     }
 
+    @GetMapping
+    public Collection<Employee> findAll() {
+        return service.findAll();
+    }
 }
